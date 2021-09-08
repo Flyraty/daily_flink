@@ -1,7 +1,6 @@
-package streaming;
+package com.timemachine.icu.wordcount.streaming;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
-import org.apache.flink.api.java.tuple.Tuple;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
@@ -33,7 +32,7 @@ public class StreamingWordCount {
                 .keyBy(0)
                 .sum(1);
          counts.print();
-         env.execute("java streaming word count");
+         env.execute("java com.timemachine.icu.wordcount.streaming word count");
 
 
     }

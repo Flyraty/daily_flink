@@ -1,4 +1,4 @@
-package streaming
+package com.timemachine.icu.wordcount.streaming
 
 import org.apache.flink.api.scala._
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
@@ -17,7 +17,7 @@ object StreamingWordCountS {
       .sum(1)
       .print()
 
-    env.execute("scala streaming word count")
+    env.execute("scala com.timemachine.icu.wordcount.streaming word count")
 
   }
 

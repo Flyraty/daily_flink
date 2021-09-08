@@ -1,4 +1,4 @@
-package batch
+package com.timemachine.icu.wordcount.batch
 
 import org.apache.flink.api.scala._
 
